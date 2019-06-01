@@ -29,7 +29,7 @@ function tests_start {
     ok_counter=0
     ko_counter=0
 
-    msg_color ${BLUE} "<<< $msg >>>"
+    msg_color ${C_BLUE} "<<< $msg >>>"
 }
 
 function tests_stop {
@@ -38,7 +38,7 @@ function tests_stop {
         msg_error "$ko_counter error(s)"
         exit $ko_counter
     else
-        msg_color ${GREEN} "All $ok_counter test(s) OK"
+        msg_color ${C_GREEN} "All $ok_counter test(s) OK"
         exit 0
     fi 
 }

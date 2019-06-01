@@ -5,7 +5,7 @@ function is_directory {
 }
 
 function is_executable {
-    test -e $1
+    test -x $1
 }
 
 function is_file {
